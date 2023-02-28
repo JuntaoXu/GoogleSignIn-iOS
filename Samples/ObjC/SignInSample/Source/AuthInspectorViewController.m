@@ -45,6 +45,7 @@ static CGFloat const kTableViewCellPadding = 22.f;
       @"profile.email",
       @"profile.name",
     ];
+      
   }
   return self;
 }
@@ -90,6 +91,8 @@ static CGFloat const kTableViewCellPadding = 22.f;
   cell.textLabel.numberOfLines = 0;
   cell.textLabel.text = [self contentForRowAtIndexPath:indexPath];
   cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    NSLog(@"%@", cell.textLabel.text);
 
   return cell;
 }

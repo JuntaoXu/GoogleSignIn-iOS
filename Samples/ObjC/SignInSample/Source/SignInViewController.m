@@ -177,6 +177,7 @@ static NSString *const kCredentialsButtonAccessibilityIdentifier = @"Credentials
   GIDGoogleUser *googleUser = [GIDSignIn.sharedInstance currentUser];
   if (googleUser) {
     _signInAuthStatus.text = @"Status: Authenticated";
+    NSLog(@"User authentication object: %@", googleUser.idToken);
   } else {
     // To authenticate, use Google Sign-In button.
     _signInAuthStatus.text = @"Status: Not authenticated";
@@ -281,7 +282,7 @@ static NSString *const kCredentialsButtonAccessibilityIdentifier = @"Credentials
 
 - (IBAction)addScopes:(id)sender {
   GIDGoogleUser *currentUser = GIDSignIn.sharedInstance.currentUser;
-  [currentUser addScopes:@[ @"https://www.googleapis.com/auth/user.birthday.read" ]
+  [currentUser addScopes:@[ @"https://www.googleapis.com/auth/calendar" ]
       presentingViewController:self
                     completion:^(GIDSignInResult *_Nullable signInResult,
                                  NSError *_Nullable error) {
