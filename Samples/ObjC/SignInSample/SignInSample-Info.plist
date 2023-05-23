@@ -37,15 +37,18 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>com.googleusercontent.apps.589453917038-qaoga89fitj2ukrsq27ko56fimmojac6</string>
+			<string>com.googleusercontent.apps.475405869817-b0voietddqc56immjjj214qoolks5g9a</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.589453917038-qaoga89fitj2ukrsq27ko56fimmojac6</string>
+				<string>com.googleusercontent.apps.475405869817-b0voietddqc56immjjj214qoolks5g9a</string>
 			</array>
 		</dict>
+		<dict/>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
+	<key>GIDClientID</key>
+	<string>475405869817-b0voietddqc56immjjj214qoolks5g9a.apps.googleusercontent.com</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
@@ -67,8 +70,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-  <!-- Do not use this client ID in your own app, it will only work for this sample. -->
-  <key>GIDClientID</key>
-  <string>589453917038-qaoga89fitj2ukrsq27ko56fimmojac6.apps.googleusercontent.com</string>
 </dict>
 </plist>
